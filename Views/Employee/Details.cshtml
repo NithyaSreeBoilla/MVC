@@ -1,0 +1,30 @@
+﻿@model mvcdemo.Models.viewModels.EmployeeDetailsViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.PageTitle</title>
+</head>
+<body>
+
+    <h1>@Model.PageHeader</h1>
+
+    <div>Employee ID : @Model.Employee.EmployeeId</div>
+    <div>Name : @Model.Employee.Name</div>
+    <div>Gender : @Model.Employee.Gender</div>
+    <div>Department : @Model.Employee.Department</div>
+    <div>Salary : @Model.Employee.Salary</div>
+
+    <h1>Employee Address</h1>
+
+    <div>City : @Model.Address.City</div>
+    <div>State : @Model.Address.State</div>
+    <div>Country : @Model.Address.Country</div>
+    <div>Pin : @Model.Address.Pin</div>
+
+</body>
+</html>

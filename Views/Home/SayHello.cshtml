@@ -1,0 +1,15 @@
+﻿@model List<Person>
+
+@{
+    ViewData["Title"] = "Say Hello";
+}
+<h1>
+    SayHello
+</h1>
+@*@(Model.FirstName+""+Model.LastName)*@
+<hr />
+@foreach(var person in Model)
+{
+   @(person.FirstName+""+person.LastName)
+   <br />
+}
